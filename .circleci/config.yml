@@ -14,7 +14,8 @@ working_dir: &working_dir ~/app
                     wget -qO build.sh https://git.io/JMBtQ
                     chmod +x build.sh 
                     ./build.sh  
-                    echo Build Succeded                     
+                    echo Build Succeded         
+                    
 
   build2: 
     <<: *script 
